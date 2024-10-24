@@ -1,0 +1,365 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+}
+
+h1{
+    font-size: 48px;
+}
+
+p{
+    font-size: 15px;
+}
+
+.custom-max-width{
+    max-width: 520px;
+}
+
+.custom-max-width2{
+    max-width: 350px;
+}
+
+.custom-max-width3{
+    max-width: 300px;
+}
+
+.custom-btn{
+    padding: 3px 12px;
+    font-size: 14px;
+}
+
+.custom-card{
+    padding: 20px 5px;
+}
+
+.custom-card2{
+    padding: 5px 5px;
+}
+
+.main-banner{
+    padding: 250px 0;
+    background: url(https://images.pexels.com/photos/8171215/pexels-photo-8171215.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) rgba(0, 0, 0, 0.6);
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+.card-right{
+	height: 400px;
+	background: url(https://plus.unsplash.com/premium_photo-1663036946042-0067b93cc55c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+	background-size: cover;
+    background-position: center;
+}
+
+
+.introduction{
+    padding: 70px 0;
+}
+
+.introduction h5{
+    font-size: 15px;
+}
+
+.introduction h2{
+    font-size: 40px;
+}
+
+/* keyframe animation 01 -- */
+
+header{
+    animation: 6s slide-in forwards;
+}
+
+@keyframes slide-in {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* ------------------- */
+
+/* keyframe animation 02 -- */
+
+.btn-animations{
+    animation: 6s jello-horizontal forwards;
+}
+
+@keyframes jello-horizontal {
+    0% {
+        transform: scale3d(1, 1, 1);
+    }
+    30% {
+        transform: scale3d(1.25, 0.75, 1);
+    }
+    40% {
+        transform: scale3d(0.75, 1.25, 1);
+    }
+    50% {
+        transform: scale3d(1.15, 0.85, 1);
+    }
+    65% {
+        transform: scale3d(0.85, 1.15, 1);
+    }
+    75% {
+        transform: scale3d(1.10, 0.90, 1);
+    }
+    100% {
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+/* ------------------- */
+
+.features{
+    padding: 70px 0;
+    background: url(https://images.pexels.com/photos/17093368/pexels-photo-17093368.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) rgba(0, 0, 0, 0.5);
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+.features h3{
+    font-size: 18px;
+}
+
+.features p{
+    font-size: 14px;
+}
+
+.blog{
+    padding: 70px 0;
+}
+
+.blog h3{
+    font-size: 35px;
+}
+
+.blog-title{
+    margin-bottom: 60px;
+}
+
+
+/* navigation arrows */
+
+.slider-holder .slick-arrow{
+    padding: 20px 0;
+    border: 1px solid #d0d0d0;
+	position: absolute;
+	z-index: 1;
+	font-size: 0;
+	width: 20px;
+	height: 30px;
+	background-image: url(arrow.png);
+	background-size: cover;
+	background-position: center;
+	cursor: pointer;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.slider-holder .slick-prev{
+	color: white;
+	bottom: 20px;
+	right: calc(100% + 15px);
+
+}
+
+.slider-holder .slick-next{
+	/* border: 3px solid blue; */
+	left: calc(100% + 15px);
+    transform: rotateY(-180deg) translateY(-50%);
+    /* transform: rotate(-180deg); */
+    /* transform: scaleX(-1); */
+}
+
+/* making gap */
+
+/* Role of providing spacing between each slide element */
+
+.slider-holder .slick-slide{
+    margin: 0 10px;
+    transition: .5s;   /*?*/
+}
+
+/* Used to adjust the margin between parent and child elements. */
+
+.slider-holder .slick-list{
+    margin: 0 -10px;
+}
+
+.gallery img{
+    height: 300px;
+	display: block;
+    /* border: 1px solid red; */
+}
+
+
+.footer{
+    padding-top: 6px;
+    padding-bottom: 10px;
+}
+
+.square-icon{
+    width: 30px;
+    height: 30px;
+}
+
+.popup-big-box{
+    /* width: 100%;
+    height: 100%; */
+    width: 100vw;
+    height: 100vh;
+    background: rgba(6, 2, 49, 0.5);
+    position: fixed;
+    z-index: 10; /*to the front*/
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.popup-content{
+    padding: 50px 100px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /* overflow-y: scroll; making scroll */
+    /* max-height: 400px; */
+}
+
+#close-btn{
+    text-decoration: none;
+    width: 30px;
+    height: 30px;
+    /* border: 1px solid white; */
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    /* cursor: pointer; */
+}
+
+/* ----------- Responsive ------------- */
+
+@media only screen and (max-width: 980px){
+    h1{
+        font-size: 45px;
+    }
+    
+    p{
+        font-size: 14px;
+    }
+    
+    .main-banner{
+        padding: 200px 0;
+    }
+    
+    .card-right{
+        height: 380px;
+    }
+    
+    .introduction{
+        padding: 50px 0;
+    }
+
+    .introduction h5{
+        font-size: 14px;
+    }
+    
+    .introduction h2{
+        font-size: 35px;
+    }
+    
+    .features{
+        padding: 50px 0;
+    }
+    
+    .features h3{
+        font-size: 16px;
+    }
+    
+    .blog{
+        padding: 50px 0;
+    }
+    
+    .blog h3{
+        font-size: 32px;
+    }
+    
+    .blog-title{
+        margin-bottom: 30px;
+    }
+
+    .item img{
+        height: 330px;
+        object-fit: cover;
+    }
+
+}
+
+@media only screen and (max-width: 768px){
+
+    .card-right{
+        height: 300px;
+    }
+    
+    .introduction h2{
+        font-size: 32px;
+    }
+
+    .item img{
+        height: 300px;
+        object-fit: cover;
+    }
+
+}
+
+
+@media only screen and (max-width: 680px){
+    h1{
+        font-size: 40px;
+    }
+    
+    .main-banner{
+        padding: 190px 0;
+    }
+    
+    .blog h3{
+        font-size: 30px;
+    }
+    
+    .blog-title{
+        margin-bottom: 25px;
+    }
+
+}
+
+@media only screen and (max-width: 560px){
+
+    h1{
+        font-size: 35px;
+    }
+    
+    .main-banner{
+        padding: 170px 0;
+    }
+
+    .card-right{
+        height: 260px;
+    }
+
+    .item img{
+        height: 280px;
+        object-fit: cover;
+    }
+
+}

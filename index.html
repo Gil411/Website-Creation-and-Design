@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final project - Byeonggil kim</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!-- Font awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- CDN slick slider css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- AOS - Animate on scroll CDN - CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="style.css">
+</head>
+<body id="body">
+
+    <header>
+        <nav class="navbar navbar-expand-md bg-light-subtle text-uppercase fw-medium">
+            <div class="container">
+
+                <button class="navbar-toggler me-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse text-start" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-3">
+                        <li class="nav-item">
+                            <a class="nav-link active text-danger" aria-current="page" href="#">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="index(about).html">about</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">service</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">plans</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            blog
+                            </a>
+
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">contact</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">login</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Popup start -->
+
+    <div id="popup" class="popup-big-box text-center">
+        <div class="popup-content bg-dark">
+            <div class="custom-max-width3">
+                <a id="close-btn" class="d-flex align-items-center justify-content-center" href="">
+                    <i class="fa-solid fa-xmark text-white"></i>
+                </a>
+
+                <h2 class="fw-bold text-capitalize text-white">get 20% off your first join</h2>
+                <p class="text-warning mt-2 mb-4 fw-light">Special offer : Get 3 months of our Transform for just.</p>
+
+                <button type="button" class="btn btn-danger text-capitalize rounded-0 px-2 px-4">get my 20% off</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Popup end -->
+    
+    <section class="main-banner text-center text-white">
+        <div class="container custom-max-width">
+            <h1 class="fw-bold">Transform Your Health & Wellness Journey</h1>
+            <hr class="border border-danger border-1 opacity-75 mt-3 mt-md-4 mb-2 mb-md-3 custom-max-width2 m-auto">
+            <p class="fw-light mb-4">Personalized plans and support to help you achieve your health goals.</p>
+            <button id="btn" type="button" class="btn-animations btn btn-danger text-capitalize rounded-0 px-4">get started</button>
+        </div>
+    </section>
+
+    <section class="introduction">
+        <div class="container">
+            <div data-aos="fade-up" class="row g-4">
+                <div class="col-12 col-md-6 order-md-1 order-2 d-flex align-items-center text-center text-md-start">
+                    <div class="card-left">
+
+                        <h5 class="text-uppercase text-danger mb-2 mb-md-3 fw-normal">Welcome to Your Wellness Hub</h5>
+                        <h2 class="fw-bold mb-2 mb-md-4 lh-1">Comprehensive Health Management at your Fingertips.</h2>
+                        <p class="mb-3 mb-md-4 fw-light">Our platform offers personalized exercise routines, diet plans, mental health support, and the latest health news and information. Take control of your health and wellness with our easy-to-use tools and resources.</p>
+                        <button type="button" class="btn btn btn-dark text-capitalize rounded-0 px-4">learn more</button>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 order-md-2 order-1">
+                    <div class="card-right"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features text-white">
+        <div class="container">
+
+            <div class="row g-3 g-md-3 g-lg-4 text-center text-md-start">
+                <!-- card 01 start -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <h3 class="text-capitalize fw-bold">personalized exercise plans</h3>
+                    <p class="fw-light text-white-50">tailored workout routines to match your fitness level and goals.</p>
+                </div> <!-- card 01 end -->
+                
+                <!-- card 02 start -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <h3 class="text-capitalize fw-bold">diet & nutrition management</h3>
+                    <p class="fw-light text-white-50">custom meal plans and nutrition tracking to help you eat healthier.</p>
+                </div> <!-- card 02 end -->
+
+                <!-- card 03 start -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <h3 class="text-capitalize fw-bold">mental health support</h3>
+                    <p class="fw-light text-white-50">access to resources and support for maintaining mental well-being.</p>
+                </div> <!-- card 03 end -->
+
+                <!-- card 04 start -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <h3 class="text-capitalize fw-bold">health news & updates</h3>
+                    <p class="fw-light text-white-50">stay informed with the latest health and wellness news.</p>
+                </div> <!-- card 04 end -->
+
+                <!-- card 05 start -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <h3 class="text-capitalize fw-bold">community support</h3>
+                    <p class="fw-light text-white-50">join a community of like-minded individuals for motivation and accountability.</p>
+                </div> <!-- card 05 end -->
+
+                <!-- card 06 start -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <h3 class="text-capitalize fw-bold">progress tracking</h3>
+                    <p class="fw-light text-white-50">monitor your health journey with easy-to-use tracking tools for workouts and nutrition.</p>
+                </div> <!-- card 06 end -->
+            </div>
+        </div>
+    </section>
+
+    <section class="blog">
+        <div class="container">
+            <div class="text-center blog-title">
+                <h3 class="fw-bold">Latest News from our Blog</h3>
+                <p class="text-body-secondary">Stay Updated with Health & Wellness Tips</p>
+            </div>
+            <div data-aos="zoom-in" class="slider-holder">
+                <!-- card 01 start -->
+                <div class="item">
+                    <div class="card border-0">
+                        <a href="">
+                            <img src="https://images.pexels.com/photos/1153369/pexels-photo-1153369.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="...">
+                        </a>
+
+                        <div class="card-body custom-card">
+                            <a href="#" class="btn btn-danger rounded-0 custom-btn text-capitalize">health</a>
+                            <a href="#" class="btn btn-danger rounded-0 custom-btn text-capitalize">lifestyle</a>
+                            <h5 class="card-title fw-bold mt-3 mb-3">5 Tips for a Healthier Lifestyle</h5>
+                            <p class="card-text text-body-secondary">Discover simple tips to incorporate healthy habits into your daily routine.</p>
+                        </div>
+                        <div class="card-footer custom-card2">
+                            <small class="text-body-secondary">12th July, 2024</small>
+                        </div>
+                    </div>
+                </div> <!-- card 01 end -->
+                
+                <!-- card 02 start -->
+                <div class="item">
+                    <div class="card border-0">
+                        <a href="">
+                            <img src="https://images.unsplash.com/photo-1607962837359-5e7e89f86776?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="...">
+                        </a>
+
+                        <div class="card-body custom-card">
+                            <a href="#" class="btn btn-danger rounded-0 custom-btn text-capitalize">benefit</a>
+                            <a href="#" class="btn btn-danger rounded-0 custom-btn text-capitalize">exercise</a>
+                            <h5 class="card-title fw-bold mt-3 mb-3">The Benefits of Regular Exercise</h5>
+                            <p class="card-text text-body-secondary">Learn about the numerous health benefits of maintaining a regular exercise routine.</p>
+                        </div>
+                        <div class="card-footer custom-card2">
+                            <small class="text-body-secondary">5th July, 2024</small>
+                        </div>
+                    </div>
+                </div> <!-- card 02 end -->
+
+                <!-- card 03 start -->
+                <div class="item">
+                    <div class="card border-0">
+                        <a href="">
+                            <img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="...">
+                        </a>
+
+                        <div class="card-body custom-card">
+                            <a href="#" class="btn btn-danger rounded-0 custom-btn text-capitalize">healthy</a>
+                            <a href="#" class="btn btn-danger rounded-0 custom-btn text-capitalize">guide</a>
+                            <h5 class="card-title fw-bold mt-3 mb-3">Healthy Eating: A Beginner's Guide</h5>
+                            <p class="card-text text-body-secondary">A comprehensive guide to making healthier food choices every day for a balanced and fulfilling lifestyle.</p>
+                        </div>
+                        <div class="card-footer custom-card2">
+                            <small class="text-body-secondary">1st July, 2024</small>
+                        </div>
+                    </div>
+                </div> <!-- card 03 end -->
+
+                <!-- card 04 start -->
+                <div class="item">
+                    <div class="card border-0">
+                        <a href="">
+                            <img src="https://images.pexels.com/photos/810775/pexels-photo-810775.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="...">
+                        </a>
+
+                        <div class="card-body custom-card">
+                            <a href="#" class="btn btn-danger rounded-0 custom-btn text-capitalize">healthy</a>
+                            <a href="#" class="btn btn-danger rounded-0 custom-btn text-capitalize">mental</a>
+                            <h5 class="card-title fw-bold mt-3 mb-3">Mindfulness for Mental Health</h5>
+                            <p class="card-text text-body-secondary">Explore how mindfulness practices, such as meditation and breathing exercises, can enhance your mental well-being.</p>
+                        </div>
+                        <div class="card-footer custom-card2">
+                            <small class="text-body-secondary">20th June, 2024</small>
+                        </div>
+                    </div>
+                </div> <!-- card 04 end -->
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery">
+        <div class="container-fluid">
+            <div class="slider-holder2">
+                <!-- card 01 start -->
+                <div class="item2">
+                    <img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="...">
+                </div>
+                <!-- card 02 start -->
+                <div class="item2">
+                    <img src="https://images.unsplash.com/photo-1480264104733-84fb0b925be3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="...">
+                </div>
+                <!-- card 03 start -->
+                <div class="item2">
+                    <img src="https://plus.unsplash.com/premium_photo-1680042813126-d2ad016b28e0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="...">
+                </div>
+                <!-- card 04 start -->
+                <div class="item2">
+                    <img src="https://images.pexels.com/photos/3026802/pexels-photo-3026802.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="...">
+                </div>
+                <!-- card 05 start -->
+                <div class="item2">
+                    <img src="https://images.unsplash.com/photo-1552650272-b8a34e21bc4b?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="...">
+                </div>
+                <!-- card 06 start -->
+                <div class="item2">
+                    <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?q=80&w=2053&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="...">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="container">
+            <div class="row g-2">
+                <div class="col-12 col-lg-10 d-flex align-items-center justify-content-center justify-content-lg-start">
+                    <div>
+                        <p class="mb-0 text-body-secondary">© 2024 Health & Wellness Platform. All rights reserved.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-2">
+                    <div class="d-flex gap-2 justify-content-center justify-content-lg-end">
+                        <div class="bg-body-secondary square-icon d-flex align-items-center justify-content-center">
+                            <a class="text-black" href="">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                        </div>
+                        <div class="bg-body-secondary square-icon d-flex align-items-center justify-content-center">
+                            <a class="text-black" href="">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                        </div>
+                        <div class="bg-body-secondary square-icon d-flex align-items-center justify-content-center">
+                            <a class="text-black" href="">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </div>
+                        <div class="bg-body-secondary square-icon d-flex align-items-center justify-content-center">
+                            <a class="text-black" href="">
+                                <i class="fa-brands fa-tiktok"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!-- CDN jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- CDN slick slider js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js" integrity="sha512-eP8DK17a+MOcKHXC5Yrqzd8WI5WKh6F1TIk5QZ/8Lbv+8ssblcz7oGC8ZmQ/ZSAPa7ZmsCU4e/hcovqR8jfJqA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- AOS - Animate on scroll CDN - JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+
+    <script>
+
+        // slick Multiple Items start -----
+
+        $('.slider-holder').slick({
+            infinite: true,
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            // autoplay: true,
+            autoplaySpeed: 2000, // wait time
+            speed: 2000, // moving time
+            ease: 'linear',
+            centerMode: true,
+            centerPadding: $('.slick').find('.item').outerWidth() / 2,
+
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        arrows: false,
+                        autoplay: true // if want make false
+                    }
+                },
+                {
+                    breakpoint: 980,
+                    settings: {
+                        slidesToShow: 1,
+                        arrows: false,
+                        autoplay: true
+                    }
+                }
+            ]
+        });
+
+        $('.slider-holder2').slick({
+            infinite: true,
+            slidesToShow: 6,
+            slidesToScroll: 1,
+            // autoplay: true,
+            autoplaySpeed: 2000, // wait time
+            speed: 2000, // moving time
+            ease: 'linear',
+            arrows: false,
+            centerMode: true,
+            centerPadding: $('.slick').find('.item2').outerWidth() / 2,
+
+            responsive: [
+                {
+                    breakpoint: 1200,
+                    settings: {
+                        slidesToShow: 5,
+                        autoplay: true // if want make false
+                    }
+                },
+                {
+                    breakpoint: 1080,
+                    settings: {
+                        slidesToShow: 4,
+                        autoplay: true
+                    }
+                },
+                {
+                    breakpoint: 780,
+                    settings: {
+                        slidesToShow: 3,
+                        autoplay: true
+                    }
+                },
+                {
+                    breakpoint: 567,
+                    settings: {
+                        slidesToShow: 2,
+                        autoplay: true
+                    }
+                }
+            ]
+        });
+
+        // slick Multiple Items end -----
+
+        // popup start -----
+
+        let popup = document.getElementById('popup');
+        let body = document.getElementById('body');
+
+        document.getElementById('btn').addEventListener('click', function(){
+            popup.style.display = "block";
+            body.style.overflowY = "hidden";
+
+        });
+
+        document.getElementById('close-btn').addEventListener('click', function(){
+            popup.style.display = "none";
+            body.style.overflowY = "visible";
+        });
+
+        // popup end -----
+
+        // Animate on Scroll - Init
+
+        AOS.init({
+            once: true, // Apply to all
+        });
+
+
+    </script>
+
+
+
+</body>
+</html>
